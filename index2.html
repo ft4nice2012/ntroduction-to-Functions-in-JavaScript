@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope of a function</title>
+</head>
+<body>
+    <h1>SCOPE</h1>
+    <button onclick="myfunction">CLICK ME</button>
+    <p id="one"></p>
+    <p id="two"></p>
+    <script>
+        var b=5;//universal variable
+        function myfunction() {
+            var a=10;//local varable
+            document.getElementById("one").innerHTML=b*a
+        }
+        document.getElementById("two").innerHTML=b
+        document.getElementById("two").innerHTML=a
+    </script>
+</body>
+</html>
